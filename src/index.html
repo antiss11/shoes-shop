@@ -9,238 +9,244 @@
   <title>Shoes</title>
 </head>
 
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <h1 class="header__brand-logo brand-logo">
-        <span class="header__first-logo">Brand</span>
-        <span class="header__second-logo red-color">logo</span>
+<body class="body">
+
+  <header class="header">
+    <div class="header__wrapper wrapper">
+      <h1 class="header__brand-logo brand-logo header-logo">
+        <span class="brand-logo__first header-logo__first">Brand</span>
+        <span class="brand-logo__second header-logo__second">logo</span>
       </h1>
-      <p class="header__contacts">
-        <a href="tel:0902234466" class="header__phone">090 - 223 44 66</a>
-        <a href="mailto:help@trendd.com" class="header__email">help@trandd.com</a>
+      <div class="header__right">
+        <p class="header__contacts">
+          <a href="tel:0902234466" class="header__phone header__contact">090 - 223 44 66</a>
+          <a href="mailto:help@trendd.com" class="header__email header__contact">help@trandd.com</a>
+        </p>
+        <p class="header__user">
+          <a href="" class="header__shopping-cart shopping-cart-button"><span class="visually-hidden">Shopping
+              cart</span>
+            <img class="shopping-cart-button__image" src="media/icons/shopping-cart.svg" alt="Shopping cart">
+          </a>
+          <a href="" class="header__login">Login</a>
+          <a href="" class="header__register">Register</a>
+        </p>
+      </div>
+    </div>
+  </header>
+  <nav class="top-nav">
+    <a href="" class="top-nav__link">Products</a>
+    <a href="" class="top-nav__link">Campaings</a>
+    <a href="" class="top-nav__link">Services</a>
+    <a href="" class="top-nav__link">Brands</a>
+    <a href="" class="top-nav__link">About us</a>
+    <input class="top-nav__search search" type="text" placeholder="Search">
+  </nav>
+  <article class="top-items">
+    <h2 class="visually-hidden">Top products</h2>
+    <div class="top-item">
+      <p class="top-item__slogan">Will Helm</p>
+      <p class="top-item__description">Winter</p>
+      <p class="top-items__link product-link">
+        <a href="" class="product-link__price">99.90$</a>
+        <a href="" class="product-link__get">Get now</a>
       </p>
-      <p class="header__user">
-        <a href="" class="header__shopping-cart">Shopping cart</a>
-        <a href="" class="header__login">Login</a>
-        <a href="" class="header__register">Register</a>
+      <img src="media/top_products/shoe_1.png" alt="" class="top-item__photo">
+    </div>
+    <div class="top-item">
+      <p class="top-item__slogan">Fast ner<span class="red-color">2</span></p>
+      <p class="top-item__description">Dress shoe</p>
+      <p class="top-items__link product-link">
+        <a href="" class="product-link__price">99.90$</a>
+        <a href="" class="product-link__get">Get now</a>
       </p>
-    </header>
-    <nav class="top-nav">
-      <a href="" class="top-nav__link">Products</a>
-      <a href="" class="top-nav__link">Campaings</a>
-      <a href="" class="top-nav__link">Services</a>
-      <a href="" class="top-nav__link">Brands</a>
-      <a href="" class="top-nav__link">About us</a>
-      <input class="top-nav__search search" type="text" placeholder="Search">
+      <img src="media/top_products/shoe_1.png" alt="" class="top-item__photo">
+    </div>
+    <a href="" class="top-item__next">
+      <span aria-hidden="true">Next top item</span>
+    </a>
+    <a href="" class="top-item__prev">
+      <span aria-hidden="true">Prev top item</span>
+    </a>
+  </article>
+  <main class="main">
+    <h2 class="visibility_hidden">Main catalog</h2>
+    <div class="main__categories">
+      <div class="main__category category">
+        <p class="category__name">Woman</p>
+        <p class="category__preview">
+          <img src="media/categories_previews/woman.png" alt="High heel woman shoe" class="category__image">
+        </p>
+        <div class="category__total">
+          <p class="category__total-text">Total</p>
+          <p class="category__total-count">357 products</p>
+          <a href="" class="category__view-link"></a>
+        </div>
+      </div>
+      <div class="main__category category">
+        <p class="category__name">Man</p>
+        <p class="category__preview">
+          <img src="media/categories_previews/man.png" alt="Men's working shoe" class="category__image">
+        </p>
+        <div class="category__total">
+          <p class="category__total-text">Total</p>
+          <p class="category__total-count">416 products</p>
+          <a href="" class="category__view-link"></a>
+        </div>
+      </div>
+      <div class="main__category category">
+        <p class="category__name">Kids</p>
+        <p class="category__preview">
+          <img src="media/categories_previews/kids.png" alt="Afroamerican kid's photo" class="category__image">
+        </p>
+        <div class="category__total">
+          <p class="category__total-text">Total</p>
+          <p class="category__total-count">232 products</p>
+          <a href="" class="category__view-link"></a>
+        </div>
+      </div>
+    </div>
+    <div class="main__special special">
+      <div class="special__header">
+        <p class="special__header-text">Special products</p>
+        <a href="" class="special__all-products-link">View all products</a>
+      </div>
+      <div class="special__catalog catalog">
+        <div class="catalog__product product">
+          <div class="product__photos">
+            <img src="media/brand_logos/nike.svg" alt="Nike logo" class="product__brand-logo">
+            <img src="media/special/nike_nike_roshe_run_premium_holiday.png" alt="Nike roshe run premium holiday"
+              class="product__photo">
+          </div>
+          <div class="product__description">
+            <p class="product__name">Nike roshe run premium holiday</p>
+            <p class="product-link">
+              <a href="" class="product-link__price">109.90$</a>
+              <a href="" class="product-link__get">Get now</a>
+            </p>
+          </div>
+        </div>
+        <div class="catalog__product product">
+          <div class="product__photos">
+            <img src="media/brand_logos/camper.svg" alt="Camper logo" class="product__brand-logo">
+            <img src="media/special/camper_line_link_67009.png" alt="Line link 67009" class="product__photo">
+          </div>
+          <div class="product__description">
+            <p class="product__name">Line link 67009</p>
+            <p class="product-link">
+              <a href="" class="product-link__price">109.90$</a>
+              <a href="" class="product-link__get">Get now</a>
+            </p>
+          </div>
+        </div>
+        <div class="catalog__product product">
+          <div class="product__photos">
+            <img src="media/brand_logos/nb.svg" alt="New balance logo" class="product__brand-logo">
+            <img src="media/special/nb_minimus_zero.png" alt="NB Minimus Zero" class="product__photo">
+          </div>
+          <div class="product__description">
+            <p class="product__name">Minimus zero</p>
+            <p class="product-link">
+              <a href="" class="product-link__price">91.56$</a>
+              <a href="" class="product-link__get">Get now</a>
+            </p>
+          </div>
+        </div>
+        <div class="catalog__product product">
+          <div class="product__photos">
+            <img src="media/brand_logos/converse.svg" alt="Converse logo" class="product__brand-logo">
+            <img src="media/special/converse_converse_toddler_boys_athletic.png" alt="Converse toddler boy's athletic"
+              class="product__photo">
+          </div>
+          <div class="product__description">
+            <p class="product__name">Converse toddler boy's athletic</p>
+            <p class="product-link">
+              <a href="" class="product-link__price">91.56$</a>
+              <a href="" class="product-link__get">Get now</a>
+            </p>
+          </div>
+        </div>
+        <div class="catalog__product product">
+          <div class="product__photos">
+            <img src="media/brand_logos/camper.svg" alt="Camper logo" class="product__brand-logo">
+            <img src="media/special/camper_verinuque.png" alt="Veronique" class="product__photo">
+          </div>
+          <div class="product__description">
+            <p class="product__name">Veronique</p>
+            <p class="product-link">
+              <a href="" class="product-link__price">109.90$</a>
+              <a href="" class="product-link__get">Get now</a>
+            </p>
+          </div>
+        </div>
+        <div class="catalog__product product">
+          <div class="product__photos">
+            <img src="media/brand_logos/puma.svg" alt="Puma logo" class="product__brand-logo">
+            <img src="media/special/puma_kids_contest_suede_boots.png" alt="Kid's contenst suede boots"
+              class="product__photo">
+          </div>
+          <div class="product__description">
+            <p class="product__name">Kid's contest suese boots</p>
+            <p class="product-link">
+              <a href="" class="product-link__price">109.90$</a>
+              <a href="" class="product-link__get">Get now</a>
+            </p>
+          </div>
+        </div>
+        <div class="catalog__product product">
+          <div class="product__photos">
+            <img src="media/brand_logos/adidas.svg" alt="Adidas logo" class="product__brand-logo">
+            <img src="media/special/adidas_barricade_6.0.png" alt="Barricade 6.0" class="product__photo">
+          </div>
+          <div class="product__description">
+            <p class="product__name">Barricade 6.0</p>
+            <p class="product-link">
+              <a href="" class="product-link__price">109.90$</a>
+              <a href="" class="product-link__get">Get now</a>
+            </p>
+          </div>
+        </div>
+        <div class="catalog__product product">
+          <div class="product__photos">
+            <img src="media/brand_logos/superga.svg" alt="Superga logo" class="product__brand-logo">
+            <img src="media/special/superga_superga_2750_cotu_classic.png" alt="Superga 2750 cotu classic"
+              class="product__photo">
+          </div>
+          <div class="product__description">
+            <p class="product__name">Superga 2750 cotu classic</p>
+            <p class="product-link">
+              <a href="" class="product-link__price">109.90$</a>
+              <a href="" class="product-link__get">Get now</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <h3 class="footer__brand-logo brand-logo">
+      <span class="header__first-logo">Brand</span>
+      <span class="header__second-logo">logo</span>
+    </h3>
+    <nav class="footer__nav nav-bottom">
+      <a href="" class="nav-bottom__link">Abous us</a>
+      <a href="" class="nav-bottom__link">Faq</a>
+      <a href="" class="nav-bottom__link">Terms and conditions</a>
+      <a href="" class="nav-bottom__link">Secure payments</a>
+      <a href="" class="nav-bottom__link">Shipping</a>
+      <a href="" class="nav-bottom__link">Contact</a>
     </nav>
-    <article class="top-items">
-      <h2 class="visibility-hidden">Top products</h2>
-      <div class="top-item">
-        <p class="top-item__slogan">Will Helm</p>
-        <p class="top-item__description">Winter</p>
-        <p class="top-items__link product-link">
-          <a href="" class="product-link__price">99.90$</a>
-          <a href="" class="product-link__get">Get now</a>
-        </p>
-        <img src="media/top_products/shoe_1.png" alt="" class="top-item__photo">
-      </div>
-      <div class="top-item">
-        <p class="top-item__slogan">Fast ner<span class="red-color">2</span></p>
-        <p class="top-item__description">Dress shoe</p>
-        <p class="top-items__link product-link">
-          <a href="" class="product-link__price">99.90$</a>
-          <a href="" class="product-link__get">Get now</a>
-        </p>
-        <img src="media/top_products/shoe_1.png" alt="" class="top-item__photo">
-      </div>
-      <a href="" class="top-item__next">
-        <span aria-hidden="true">Next top item</span>
+    <div class="footer__social social-links">
+      <a href="" class="social-links__link">
+        <img class="social-links__logo" src="media/social/pinterest.svg" alt="Pinterest">
       </a>
-      <a href="" class="top-item__prev">
-        <span aria-hidden="true">Prev top item</span>
+      <a href="" class="social-links__link">
+        <img class="social-links__logo" src="media/social/twitter.svg" alt="Twitter">
       </a>
-    </article>
-    <main class="main">
-      <h2 class="visibility_hidden">Main catalog</h2>
-      <div class="main__categories">
-        <div class="main__category category">
-          <p class="category__name">Woman</p>
-          <p class="category__preview">
-            <img src="media/categories_previews/woman.png" alt="High heel woman shoe" class="category__image">
-          </p>
-          <div class="category__total">
-            <p class="category__total-text">Total</p>
-            <p class="category__total-count">357 products</p>
-            <a href="" class="category__view-link"></a>
-          </div>
-        </div>
-        <div class="main__category category">
-          <p class="category__name">Man</p>
-          <p class="category__preview">
-            <img src="media/categories_previews/man.png" alt="Men's working shoe" class="category__image">
-          </p>
-          <div class="category__total">
-            <p class="category__total-text">Total</p>
-            <p class="category__total-count">416 products</p>
-            <a href="" class="category__view-link"></a>
-          </div>
-        </div>
-        <div class="main__category category">
-          <p class="category__name">Kids</p>
-          <p class="category__preview">
-            <img src="media/categories_previews/kids.png" alt="Afroamerican kid's photo" class="category__image">
-          </p>
-          <div class="category__total">
-            <p class="category__total-text">Total</p>
-            <p class="category__total-count">232 products</p>
-            <a href="" class="category__view-link"></a>
-          </div>
-        </div>
-      </div>
-      <div class="main__special special">
-        <div class="special__header">
-          <p class="special__header-text">Special products</p>
-          <a href="" class="special__all-products-link">View all products</a>
-        </div>
-        <div class="special__catalog catalog">
-          <div class="catalog__product product">
-            <div class="product__photos">
-              <img src="media/brand_logos/nike.svg" alt="Nike logo" class="product__brand-logo">
-              <img src="media/special/nike_nike_roshe_run_premium_holiday.png" alt="Nike roshe run premium holiday"
-                class="product__photo">
-            </div>
-            <div class="product__description">
-              <p class="product__name">Nike roshe run premium holiday</p>
-              <p class="product-link">
-                <a href="" class="product-link__price">109.90$</a>
-                <a href="" class="product-link__get">Get now</a>
-              </p>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <div class="product__photos">
-              <img src="media/brand_logos/camper.svg" alt="Camper logo" class="product__brand-logo">
-              <img src="media/special/camper_line_link_67009.png" alt="Line link 67009" class="product__photo">
-            </div>
-            <div class="product__description">
-              <p class="product__name">Line link 67009</p>
-              <p class="product-link">
-                <a href="" class="product-link__price">109.90$</a>
-                <a href="" class="product-link__get">Get now</a>
-              </p>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <div class="product__photos">
-              <img src="media/brand_logos/nb.svg" alt="New balance logo" class="product__brand-logo">
-              <img src="media/special/nb_minimus_zero.png" alt="NB Minimus Zero" class="product__photo">
-            </div>
-            <div class="product__description">
-              <p class="product__name">Minimus zero</p>
-              <p class="product-link">
-                <a href="" class="product-link__price">91.56$</a>
-                <a href="" class="product-link__get">Get now</a>
-              </p>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <div class="product__photos">
-              <img src="media/brand_logos/converse.svg" alt="Converse logo" class="product__brand-logo">
-              <img src="media/special/converse_converse_toddler_boys_athletic.png" alt="Converse toddler boy's athletic"
-                class="product__photo">
-            </div>
-            <div class="product__description">
-              <p class="product__name">Converse toddler boy's athletic</p>
-              <p class="product-link">
-                <a href="" class="product-link__price">91.56$</a>
-                <a href="" class="product-link__get">Get now</a>
-              </p>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <div class="product__photos">
-              <img src="media/brand_logos/camper.svg" alt="Camper logo" class="product__brand-logo">
-              <img src="media/special/camper_verinuque.png" alt="Veronique" class="product__photo">
-            </div>
-            <div class="product__description">
-              <p class="product__name">Veronique</p>
-              <p class="product-link">
-                <a href="" class="product-link__price">109.90$</a>
-                <a href="" class="product-link__get">Get now</a>
-              </p>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <div class="product__photos">
-              <img src="media/brand_logos/puma.svg" alt="Puma logo" class="product__brand-logo">
-              <img src="media/special/puma_kids_contest_suede_boots.png" alt="Kid's contenst suede boots"
-                class="product__photo">
-            </div>
-            <div class="product__description">
-              <p class="product__name">Kid's contest suese boots</p>
-              <p class="product-link">
-                <a href="" class="product-link__price">109.90$</a>
-                <a href="" class="product-link__get">Get now</a>
-              </p>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <div class="product__photos">
-              <img src="media/brand_logos/adidas.svg" alt="Adidas logo" class="product__brand-logo">
-              <img src="media/special/adidas_barricade_6.0.png" alt="Barricade 6.0" class="product__photo">
-            </div>
-            <div class="product__description">
-              <p class="product__name">Barricade 6.0</p>
-              <p class="product-link">
-                <a href="" class="product-link__price">109.90$</a>
-                <a href="" class="product-link__get">Get now</a>
-              </p>
-            </div>
-          </div>
-          <div class="catalog__product product">
-            <div class="product__photos">
-              <img src="media/brand_logos/superga.svg" alt="Superga logo" class="product__brand-logo">
-              <img src="media/special/superga_superga_2750_cotu_classic.png" alt="Superga 2750 cotu classic"
-                class="product__photo">
-            </div>
-            <div class="product__description">
-              <p class="product__name">Superga 2750 cotu classic</p>
-              <p class="product-link">
-                <a href="" class="product-link__price">109.90$</a>
-                <a href="" class="product-link__get">Get now</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <h3 class="footer__brand-logo brand-logo">
-        <span class="header__first-logo">Brand</span>
-        <span class="header__second-logo">logo</span>
-      </h3>
-      <nav class="footer__nav nav-bottom">
-        <a href="" class="nav-bottom__link">Abous us</a>
-        <a href="" class="nav-bottom__link">Faq</a>
-        <a href="" class="nav-bottom__link">Terms and conditions</a>
-        <a href="" class="nav-bottom__link">Secure payments</a>
-        <a href="" class="nav-bottom__link">Shipping</a>
-        <a href="" class="nav-bottom__link">Contact</a>
-      </nav>
-      <div class="footer__social social-links">
-        <a href="" class="social-links__link">
-          <img class="social-links__logo" src="media/social/pinterest.svg" alt="Pinterest">
-        </a>
-        <a href="" class="social-links__link">
-          <img class="social-links__logo" src="media/social/twitter.svg" alt="Twitter">
-        </a>
-        <a href="" class="social-links__link">
-          <img class="social-links__logo" src="media/social/facebook.svg" alt="Facebook">
-        </a>
-      </div>
-    </footer>
-  </div>
+      <a href="" class="social-links__link">
+        <img class="social-links__logo" src="media/social/facebook.svg" alt="Facebook">
+      </a>
+    </div>
+  </footer>
 </body>
 
 </html>

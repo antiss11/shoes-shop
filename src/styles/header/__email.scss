@@ -1,0 +1,20 @@
+$top-offset: 0.4em;
+$left-offset: -1em;
+$icon-left-offset: -1.8em;
+$icon-top-offset: 0.0625em;
+
+.header__email {
+  position: relative;
+  top: $top-offset;
+  left: $left-offset;
+
+  &:before {
+    width: 12px;
+    height: 12px;
+    content: url("/src/media/icons/mail.svg");
+    display: block;
+    position: absolute;
+    left: $icon-left-offset;
+    top: $icon-top-offset;
+  }
+}

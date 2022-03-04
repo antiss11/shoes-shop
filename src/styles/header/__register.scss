@@ -1,0 +1,47 @@
+$padding-x: 0.75em;
+$padding-y: 1.2em;
+$border-radius: 0.3125em;
+$width: 10.625em;
+$font-family: "Gotham Rounded";
+$font-size: 1.1875rem;
+$font-color: white;
+
+$icon-width: 0.3em;
+$icon-height: 0.3em;
+$icon-line-width: 0.2em;
+$icon-right-offset: 20%;
+
+.header__register {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $font-color;
+  box-sizing: border-box;
+  padding: $padding-x $padding-y;
+  border-radius: $border-radius;
+  width: $width;
+  text-align: center;
+  position: relative;
+  background: {
+    image: url("/src/media/icons/registration_button.png");
+    repeat: no-repeat;
+    position: center;
+  }
+  font: {
+    family: $font-family;
+    size: $font-size;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    border: solid white;
+    border-width: 0 $icon-line-width $icon-line-width 0;
+    width: $icon-width;
+    height: $icon-height;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: calc(50% - #{$icon-width});
+    right: $icon-right-offset;
+  }
+}

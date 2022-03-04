@@ -1,0 +1,16 @@
+$font-color: black;
+$font-family: "Gotham Rounded";
+$padding-x: 0.875em;
+$padding-y: 1em;
+
+.header__login {
+  display: block;
+  text-decoration: none;
+  color: $font-color;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding: $padding-x $padding-y;
+  font: {
+    family: $font-family;
+  }
+}
