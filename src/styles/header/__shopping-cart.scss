@@ -1,8 +1,8 @@
-$padding-x: 0.625em;
-$padding-y: 0.9375em;
+$padding-x: 0.9375em;
+$padding-y: 0.625em;
 $delimiter-color: #e0e0e0;
 
 .header__shopping-cart {
   border-right: 1px solid $delimiter-color;
-  padding: $padding-x $padding-y;
+  padding: $padding-y $padding-x;
 }

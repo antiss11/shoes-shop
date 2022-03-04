@@ -1,8 +1,8 @@
 $bg-color: #f1f1f1;
 $border-color: #f9f9f9;
 $border-radius: 0.3125em;
-$padding-x: 0.5em;
-$padding-y: 0em;
+$padding-x: 0em;
+$padding-y: 0.5em;
 
 .header__user {
   background-color: $bg-color;
@@ -10,7 +10,7 @@ $padding-y: 0em;
   position: relative;
   box-sizing: border-box;
   border-radius: $border-radius;
-  padding: $padding-x $padding-y;
+  padding: $padding-y $padding-x;
   display: flex;
   align-items: center;
   margin: 0;
