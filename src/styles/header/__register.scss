@@ -41,7 +41,7 @@ $icon-right-offset: 20%;
     height: $icon-height;
     transform: rotate(-45deg);
     position: absolute;
-    top: calc(50% - #{$icon-width});
+    top: calc(50% - #{$icon-width - 0.02em});
     right: $icon-right-offset;
   }
 }
