@@ -1,0 +1,16 @@
+$font-family: "Gotham", sans;
+$font-size: 4.3rem;
+$color: white;
+
+.top-item__description {
+  font: {
+    family: $font-family;
+    size: $font-size;
+  }
+  color: $color;
+  text-transform: uppercase;
+  margin: 0;
+  position: relative;
+  top: -30px;
+  margin-left: 35px;
+}
