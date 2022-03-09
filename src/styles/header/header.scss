@@ -11,8 +11,10 @@
 @import "__wrapper.scss";
 
 $bg-color: #f2f2f2;
+$z-index: 1;
 
 .header {
   background-color: $bg-color;
   position: relative;
+  z-index: $z-index;
 }
