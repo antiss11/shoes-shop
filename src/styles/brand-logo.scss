@@ -1,0 +1,13 @@
+.brand-logo {
+  font-family: "Futura Std", Georgia, serif;
+  text-transform: uppercase;
+  margin: 0;
+
+  &__first {
+    font-weight: bold;
+  }
+
+  &__second {
+    font-weight: 300;
+  }
+}
