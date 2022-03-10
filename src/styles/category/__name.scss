@@ -1,0 +1,14 @@
+$font-family: "Gotham";
+$font-weight: 300;
+$font-size: 2.5rem;
+
+.category__name {
+  margin: 0;
+  font: {
+    family: $font-family;
+    weight: $font-weight;
+    size: $font-size;
+  }
+  text-transform: uppercase;
+  color: black;
+}

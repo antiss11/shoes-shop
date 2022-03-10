@@ -1,0 +1,21 @@
+@import "__image.scss";
+@import "__name.scss";
+@import "__preview.scss";
+@import "__total-count.scss";
+@import "__total-text.scss";
+@import "__total.scss";
+@import "__view-link.scss";
+
+$padding-x: 4.65em;
+$padding-y: 1.5em;
+$bg-color: white;
+$border-color: #dcdcdc;
+
+.category {
+  background-color: $bg-color;
+  border: 1px solid $border-color;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: $padding-y $padding-x;
+}

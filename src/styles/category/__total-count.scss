@@ -1,0 +1,13 @@
+$font-family: "Gotham";
+$font-weight: 500;
+$color: black;
+
+.category__total-count {
+  margin: 0;
+  font: {
+    family: $font-family;
+    weight: $font-weight;
+  }
+  text-transform: uppercase;
+  color: black;
+}

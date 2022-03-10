@@ -1,0 +1,36 @@
+.category__preview {
+  position: relative;
+  &--woman {
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: 50%/50% url("/src/media/icons/woman_shoe.png") no-repeat;
+      background-size: 60%;
+    }
+  }
+  &--man {
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: 50%/50% url("/src/media/icons/man_shoe.png") no-repeat;
+      background-size: 60%;
+    }
+  }
+  &--kids {
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: 50%/50% url("/src/media/icons/kid_shoe.png") no-repeat;
+      background-size: 60%;
+    }
+  }
+}
