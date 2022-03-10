@@ -1,5 +1,9 @@
 @import "__body.scss";
+@import "__next.scss";
+@import "__prev.scss";
+
+$bg-color: #9ccd8d;
 
 .top-items-container {
-  background-color: #9ccd8d;
+  background-color: $bg-color;
 }
