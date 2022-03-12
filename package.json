@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch-sass": "node-sass -w ./src/index.scss -o ./dist"
+    "watch-sass": "node-sass -rw ./src/index.scss ./dist/index.css"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/antiss11/shoes-shop#readme",
   "devDependencies": {},
   "dependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.1",
+    "normalizecss": "^3.0.0"
   }
 }
