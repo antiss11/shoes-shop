@@ -1,18 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Creator: CorelDRAW X6 -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="70.5556mm" height="57.3391mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 6701 5446"
- xmlns:xlink="http://www.w3.org/1999/xlink">
- <defs>
-  <style type="text/css">
-   <![CDATA[
-    .fil0 {fill:#41ABE1}
-   ]]>
-  </style>
- </defs>
- <g id="Livello_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <path class="fil0" d="M6701 645c-247,109 -512,183 -790,216 284,-170 502,-440 604,-761 -266,158 -560,272 -873,334 -251,-267 -608,-434 -1004,-434 -759,0 -1375,616 -1375,1375 0,108 12,213 36,313 -1143,-57 -2156,-605 -2834,-1437 -118,203 -186,439 -186,691 0,477 243,898 612,1144 -225,-7 -437,-69 -623,-172 0,6 0,11 0,17 0,666 474,1222 1103,1348 -115,31 -237,48 -362,48 -89,0 -175,-9 -259,-25 175,546 683,944 1284,955 -471,369 -1063,589 -1708,589 -111,0 -220,-7 -328,-19 608,390 1331,618 2108,618 2529,0 3912,-2095 3912,-3912 0,-60 -1,-119 -4,-178 269,-194 502,-436 686,-712z"/>
- </g>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="16" viewBox="0 0 19 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e82026;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1227" y="2130" width="19" height="16" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="1" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feGaussianBlur result="blur-2" stdDeviation="1.414" in="SourceAlpha"/>
+      <feFlood result="flood-2" flood-opacity="0.24"/>
+      <feComposite result="composite-2" operator="out" in2="blur-2"/>
+      <feOffset result="offset-2" dx="0.5" dy="0.866"/>
+      <feComposite result="composite-3" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend-2" mode="multiply" in2="blend"/>
+    </filter>
+  </defs>
+  <path id="Twitter_Icon" data-name="Twitter Icon" class="cls-1" d="M1245.99,2131.84c-0.09.68-1.12,1.36-1.75,1.88,0.62,8.69-9.72,14.11-17.23,9.71,2.1,0.01,4.48-.54,5.73-1.67-1.82-.28-3.11-1.07-3.62-2.61a5.025,5.025,0,0,0,1.65-.11c-1.67-.6-2.99-1.54-3.07-3.65a5.628,5.628,0,0,0,1.64.31c-1.07-.66-2.31-3.16-1.2-5.01a11.948,11.948,0,0,0,8.21,3.97c-0.94-3.84,4.39-6.22,6.8-3.45a14.326,14.326,0,0,0,2.52-.84,5.027,5.027,0,0,1-1.65,1.99A6.172,6.172,0,0,0,1245.99,2131.84Z" transform="translate(-1227 -2130)"/>
 </svg>
