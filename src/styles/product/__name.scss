@@ -1,0 +1,16 @@
+$font-family: "Gotham";
+$font-weight: 500;
+
+.product__name {
+  text-transform: capitalize;
+  font: {
+    family: $font-family;
+    weight: $font-weight;
+  }
+  padding: 0 2.2em;
+  margin: {
+    top: 0.6em;
+    bottom: 0;
+  }
+  text-align: center;
+}

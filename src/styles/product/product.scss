@@ -1,0 +1,22 @@
+@import "__brand-logo.scss";
+@import "__description.scss";
+@import "__name.scss";
+@import "__photo.scss";
+@import "__photos.scss";
+
+$border-color: #eaeaea;
+$border-color-hover: #fe3026;
+$border-width-hover: 6px;
+
+.product {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid $border-color;
+  padding: 1em 0.5em;
+
+  &:hover {
+    outline: $border-width-hover solid $border-color-hover;
+  }
+}
