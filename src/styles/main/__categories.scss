@@ -1,8 +1,8 @@
-$top-offset: -15em;
+$top-offset: -310px;
 
 .main__categories {
   display: flex;
   position: relative;
   justify-content: space-between;
-  top: $top-offset;
+  margin-top: $top-offset;
 }
