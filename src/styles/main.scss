@@ -1,0 +1,45 @@
+@import "fonts.scss";
+@import "wrapper.scss";
+@import "brand-logo.scss";
+@import "body.scss";
+@import "header/header.scss";
+@import "top-nav/top-nav.scss";
+@import "top-items-button/top-items-button.scss";
+@import "top-items-container/top-items-container.scss";
+@import "top-item/top-item.scss";
+@import "product-link/product-link.scss";
+@import "category/category.scss";
+@import "main/main.scss";
+@import "view-link/view-link.scss";
+@import "special/special.scss";
+@import "product/product.scss";
+@import "catalog/catalog.scss";
+@import "header-logo.scss";
+@import "shopping-cart-button.scss";
+@import "main-container/main-container.scss";
+@import "footer-container/footer-container.scss";
+@import "footer/footer.scss";
+@import "social-links/social-links.scss";
+@import "nav-bottom/nav-bottom.scss";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.top-items-offset-container {
+  position: relative;
+  top: -65px;
+}
+
+.top-item:nth-child(1) {
+  display: none;
+}
