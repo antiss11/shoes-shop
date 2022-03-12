@@ -1,0 +1,12 @@
+.social-links__link {
+  display: inline-flex;
+  justify-items: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0.2em;
+
+  &:not(:last-child) {
+    margin-right: 0.2em;
+  }
+}
