@@ -1,0 +1,15 @@
+@import "__brand-logo.scss";
+@import "__first-logo.scss";
+@import "__second-logo.scss";
+
+$padding-y: 3em;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: {
+    top: $padding-y;
+    bottom: $padding-y;
+  }
+}
