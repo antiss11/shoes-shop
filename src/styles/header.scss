@@ -1,0 +1,194 @@
+$header_bg-color: #f2f2f2;
+$header_z-index: 1;
+$header_font-family: "Gotham Rounded", Georgia, serif;
+
+$__brand-logo_font-size: 3.644rem;
+$__brand-logo_top-offset: -0.5em;
+
+$__contact_font-size: 0.75rem;
+
+$__email_top-offset: 0.4em;
+$__email_left-offset: -1em;
+$__email-icon_width: 0.5rem;
+$__email-icon_height: 0.5rem;
+$__email-icon_top-offset: 0.0625em;
+$__email-icon_left-offset: -1.8em;
+
+$__login_color: black;
+$__login_padding-x: 1em;
+$__login_padding-y: 0.875em;
+
+$__phone_margin-right: 3.25em;
+$__phone_top-offset: 0.5em;
+$__phone_left-offset: -2.4em;
+$__phone-icon_left-offset: -1.6em;
+$__phone-icon_width: 0.5rem;
+$__phone-icon_height: 0.5rem;
+
+$__register_padding-x: 0.75em;
+$__register_padding-y: 0.8em;
+$__register_border-radius: 0.3125em;
+$__register_width: 10.625em;
+$__register_font-size: 1.1875rem;
+$__register_color: white;
+$__register-icon_width: 0.3em;
+$__register-icon_height: 0.3em;
+$__register-icon_line-width: 0.2em;
+$__register-icon_right-offset: 20%;
+
+$__right_top-offset: -2.5em;
+
+$__shopping-cart_padding-x: 1.5em;
+$__shopping-cart_padding-y: 0.625em;
+$__shopping-cart_delimiter-color: #e0e0e0;
+$__shopping-cart_delimiter-width: 1px;
+
+$__user_bg-color: #f1f1f1;
+$__user_border-color: #f9f9f9;
+$__user_border-radius: 0.3125em;
+$__user_border-width: 1px;
+$__user_padding-x: 0;
+$__user_padding-y: 0em;
+
+$__wrapper_padding-top: 4.2em;
+$__wrapper_padding-bottom: 2.5em;
+
+.header {
+  background-color: $header_bg-color;
+  position: relative;
+  z-index: $header_z-index;
+  font-family: $header_font-family;
+
+  @include element("brand-logo") {
+    font-size: $__brand-logo_font-size;
+    position: relative;
+    top: $__brand-logo_top-offset;
+  }
+
+  @include element("contact") {
+    font: {
+      size: $__contact_font-size;
+      weight: normal;
+      style: normal;
+    }
+    color: black;
+    text-decoration: none;
+  }
+
+  @include element("contacts") {
+    display: flex;
+    justify-content: end;
+  }
+
+  @include element("email") {
+    position: relative;
+    top: $__email_top-offset;
+    left: $__email_left-offset;
+
+    &:before {
+      width: $__email-icon_width;
+      height: $__email-icon_height;
+      content: url("/src/media/icons/mail.svg");
+      display: block;
+      position: absolute;
+      left: $__email-icon_left-offset;
+      top: $__email-icon_top-offset;
+    }
+  }
+
+  @include element("login") {
+    display: block;
+    text-decoration: none;
+    color: $__login_color;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding: $__login_padding-y $__login_padding-x;
+  }
+
+  @include element("phone") {
+    position: relative;
+    margin-right: $__phone_margin-right;
+    left: $__phone_left-offset;
+    top: $__phone_top-offset;
+    &:before {
+      width: $__phone-icon_width;
+      height: $__phone-icon_height;
+      content: url("/src/media/icons/phone.svg");
+      display: block;
+      position: absolute;
+      left: $__phone-icon_left-offset;
+    }
+  }
+
+  @include element("register") {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $__register_color;
+    box-sizing: border-box;
+    padding: $__register_padding-y $__register_padding-x;
+    border-radius: $__register_border-radius;
+    width: $__register_width;
+    text-indent: 1.1em;
+    position: relative;
+    background: {
+      image: url("/src/media/icons/registration_button.png");
+      repeat: no-repeat;
+      position: center;
+    }
+    font: {
+      size: $__register_font-size;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      border: solid white;
+      border-width: 0 $__register-icon_line-width $__register-icon_line-width 0;
+      width: $__register-icon_width;
+      height: $__register-icon_height;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: calc(50% - #{$__register-icon_height - 0.02em});
+      right: $__register-icon_right-offset;
+    }
+  }
+
+  @include element("right") {
+    position: relative;
+    top: $__right_top-offset;
+  }
+
+  @include element("shopping-cart") {
+    border-right: $__shopping-cart_delimiter-width solid
+      $__shopping-cart_delimiter-color;
+    padding: $__shopping-cart_padding-y $__shopping-cart_padding-x;
+  }
+
+  @include element("user") {
+    background-color: $__user_bg-color;
+    border: $__user_border-width solid $__user_border-color;
+    border: {
+      style: solid;
+      width: $__user_border-width;
+      color: $__user_border-color;
+      radius: $__user_border-radius;
+    }
+    position: relative;
+    box-sizing: border-box;
+    padding: $__user_padding-y $__user_padding-x;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  @include element("wrapper") {
+    padding: {
+      top: $__wrapper_padding-top;
+      bottom: $__wrapper_padding-bottom;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
