@@ -1,12 +1,12 @@
-$first-font-color: #ee3023;
-$second-font-color: #201f1f;
+$__first_font-color: #ee3023;
+$__second_font-color: #201f1f;
 
 .header-logo {
-  &__first {
-    color: $first-font-color;
+  @include element("first") {
+    color: $__first_font-color;
   }
 
-  &__second {
-    color: $second-font-color;
+  @include element("second") {
+    color: $__second_font-color;
   }
 }
