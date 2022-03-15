@@ -1,13 +1,17 @@
+$brand-logo_font-family: "Futura Std", Georgia, serif;
+$__first_font-weight: bold;
+$__second_font-weight: 300;
+
 .brand-logo {
-  font-family: "Futura Std", Georgia, serif;
+  font-family: $brand-logo_font-family;
   text-transform: uppercase;
   margin: 0;
 
-  &__first {
-    font-weight: bold;
+  @include element("first") {
+    font-weight: $__first_font-weight;
   }
 
-  &__second {
-    font-weight: 300;
+  @include element("second") {
+    font-weight: $__second_font-weight;
   }
 }
