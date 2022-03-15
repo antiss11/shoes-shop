@@ -1,0 +1,82 @@
+$top-nav_top-offset: -2.5em;
+$top-nav_padding-x: 2.25em;
+$top-nav_padding-y: 0.8em;
+$top-nav_bg-color: #fcfcfc;
+$top-nav_letter-spacing: 0.085em;
+$top-nav_border-color: #e6e6eb;
+$top-nav_border-width: 1px;
+$top-nav_z-index: 1;
+$top-nav_font-family: "Gotham Condensed", "Gotham", Georgia, sans-serif;
+
+$__link_font-weight: bold;
+$__link_color: black;
+$__link_font-size: 1.5rem;
+$__link_delimiter-color: #cfc8bc;
+$__link_padding-left: 0.5em;
+$__link_padding-right: 1.25em;
+$__link_padding-y: 0.2em;
+$__link_padding-left-not-first: 1.3em;
+$__link_border-width: 1px;
+
+$__search_border-radius: 0.85125em;
+$__search_padding-x: 1.3em;
+$__search_padding-y: 0.3em;
+$__search_font-family: Helvetica, sans-serif;
+$__search_border-color: #cfc8bc;
+$__search_border-width: 1px;
+$__search-icon_bg-x-offset: 0.375em;
+$__search-icon_bg-size: 1em;
+$__search-icon_text-indent: 0.8125em;
+
+.top-nav {
+  position: relative;
+  top: $top-nav_top-offset;
+  padding: $top-nav_padding-y $top-nav_padding-x;
+  background-color: $top-nav_bg-color;
+  box-sizing: border-box;
+  border: $top-nav_border-width solid $top-nav_border-color;
+  letter-spacing: $top-nav_letter-spacing;
+  display: flex;
+  align-items: center;
+  z-index: $top-nav_z-index;
+  font-family: $top-nav_font-family;
+
+  @include element("link") {
+    display: inline-block;
+    color: $__link_color;
+    border-right: $__link_border-width solid $__link_delimiter-color;
+    font: {
+      weight: $__link_font-weight;
+      size: $__link_font-size;
+    }
+    text: {
+      transform: uppercase;
+      decoration: none;
+    }
+    padding: $__link_padding-y $__link_padding-right $__link_padding-y
+      $__link_padding-left;
+
+    &:not(:first-child) {
+      padding-left: $__link_padding-left-not-first;
+    }
+  }
+
+  @include element("search") {
+    display: inline-block;
+    border-radius: $__search_border-radius;
+    margin-left: auto;
+    padding: $__search_padding-y $__search_padding-x;
+    border: $__search_border-width solid $__search_border-color;
+    background: {
+      image: url("/src/media/icons/search.svg");
+      repeat: no-repeat;
+      position: $__search-icon_bg-x-offset center;
+      size: $__search-icon_bg-size;
+    }
+
+    &::placeholder {
+      text-indent: $__search-icon_text-indent;
+      font-family: $__search_font-family;
+    }
+  }
+}
