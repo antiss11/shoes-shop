@@ -1,0 +1,26 @@
+$__logo_width: 1.6em;
+$__logo_height: 1.6em;
+$__link_bg-color: white;
+$__link_border-radius: 5px;
+$__link_padding: 0.2em;
+$__link_margin-right: 0.2em;
+
+.social-links {
+  @include element("logo") {
+    width: $__logo_width;
+    height: $__logo_height;
+  }
+
+  @include element("link") {
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    background-color: $__link_bg-color;
+    border-radius: $__link_border-radius;
+    padding: $__link_padding;
+
+    &:not(:last-child) {
+      margin-right: $__link_margin-right;
+    }
+  }
+}
