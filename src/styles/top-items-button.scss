@@ -1,0 +1,44 @@
+$top-items_bg-color: #e5f2e1;
+$top-items_border-width: 8px;
+$top_items_border-color: #636b5f;
+$top-items-button_width: 4.5em;
+$top-items-button_height: 4.5em;
+$top-items-arrow_width: 1.5em;
+$top-items-arrow_height: 1.5em;
+$top-items-arrow_width: 0.5em;
+$top-items-arrow_color: #52533f;
+
+.top-items-button {
+  border: $top-items_border-width solid $top-nav_border-color;
+  width: $top-items-button_width;
+  height: $top-items-button_height;
+  background-color: $top-items_bg-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  &::before {
+    display: block;
+    content: "";
+    width: $top-items-arrow_width;
+    height: $top-items-arrow_height;
+    border: {
+      color: $top-items-arrow_color;
+      width: 0 $top-items-arrow_width $top-items-arrow_width 0;
+      style: solid;
+    }
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  &--next::before {
+    transform: translateX(calc(-1 * calc(50% / 2))) rotate(-45deg);
+  }
+  &--prev::before {
+    transform: translateX(calc(50% / 2)) rotate(135deg);
+  }
+}
