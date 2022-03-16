@@ -1,0 +1,69 @@
+$product_border-color: #eaeaea;
+$product_border-width: 1px;
+$product_border-color--hover: #fe3026;
+$product_border-width--hover: 6px;
+$product_font-family: Gotham, Georgia, sans-serif;
+$product_padding-x: 0.5em;
+$product_padding-y: 1em;
+
+$__brand-logo_width: 5em;
+$__brand-logo_height: 1.8em;
+
+$__name_font-weight: 500;
+$__name_padding-x: 2.2em;
+$__name_padding-y: 0;
+$__name_margin-top: 0.6em;
+$__name_margin-bottom: 0;
+
+$__photo_margin-top: 0.9em;
+
+$__photos_border-width: 1px;
+$__photos_border-color: #e1e0df;
+
+.product {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+  border: $product_border-width solid $border-color;
+  padding: $product_padding-y $product_padding-x;
+  font-family: $product_font-family;
+
+  &:hover {
+    outline: $product_border-width--hover solid $product_border-color--hover;
+  }
+
+  @include element("brand-logo") {
+    display: block;
+    width: $__brand-logo_width;
+    height: $__brand-logo_height;
+  }
+
+  @include element("description") {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include element("name") {
+    text-transform: capitalize;
+    font-weight: $__name_font-weight;
+    padding: $__name_padding-y $__name_padding-x;
+    margin: {
+      top: $__name_margin-top;
+      bottom: $__name_margin-bottom;
+    }
+    text-align: center;
+  }
+
+  @include element("photo") {
+    margin-top: $__photo_margin-top;
+  }
+
+  @include element("photos") {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: $__photos_border-width solid $__photos_border-color;
+  }
+}
