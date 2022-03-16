@@ -1,0 +1,106 @@
+$category_bg-color: white;
+$category_border-color: #dcdcdc;
+$category_padding-x: 4.65em;
+$category_padding-y: 1.5em;
+$category_border-width: 1px;
+$category_font-family: "Gotham", Georgia, serif;
+
+$__name_font-weight: 500;
+$__name_font-size: 2.5rem;
+$__name_color: black;
+
+$__total-count_font-weight: 300;
+$__total-count_color: black;
+
+$__total-text_font-weight: 500;
+$__total-text_font-size: 1.5rem;
+$__total-text_color: #f2262c;
+
+$__view-link_top-offset: 0.1em;
+
+.category {
+  background-color: $category_bg-color;
+  border: $category_border-width solid $category_border-color;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: $category_padding-y $category_padding-x;
+  font-family: $category_font-family;
+
+  @include element("name") {
+    margin: 0;
+    font: {
+      weight: $__name_font-weight;
+      size: $__name_font-size;
+    }
+    text-transform: uppercase;
+    color: $__name_color;
+  }
+
+  @include element("preview") {
+    position: relative;
+    @include modifier("woman") {
+      &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: 50%/50% url("/src/media/icons/woman_shoe.png") no-repeat;
+        background-size: 60%;
+      }
+    }
+
+    @include modifier("man") {
+      &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: 50%/50% url("/src/media/icons/man_shoe.png") no-repeat;
+        background-size: 60%;
+      }
+    }
+
+    @include modifier("kids") {
+      &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: 50%/50% url("/src/media/icons/kid_shoe.png") no-repeat;
+        background-size: 60%;
+      }
+    }
+  }
+
+  @include element("total-count") {
+    margin: 0;
+    font-weight: $__total-count_font-weight;
+    text-transform: uppercase;
+    color: $__total-count_color;
+  }
+
+  @include element("total-text") {
+    margin: 0;
+    font: {
+      weight: $__total-text_font-weight;
+      size: $__total-text_font-size;
+    }
+    text-transform: uppercase;
+    color: $__total-text_color;
+  }
+
+  @include element("total") {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+
+  @include element("view-link") {
+    position: relative;
+    top: $__view-link_top-offset;
+  }
+}
