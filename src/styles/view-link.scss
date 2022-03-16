@@ -1,0 +1,15 @@
+$__line_width: 0.9em;
+$__line_height: 1px;
+$__line_border-width: 1px;
+$__line_border-color: black;
+$__line_margin-bottom: 1px;
+
+.view-link {
+  @include element("line") {
+    display: block;
+    width: $__line_width;
+    height: $__line_height;
+    border-top: $__line_border-width solid $__line_border-color;
+    margin-bottom: $__line_margin-bottom;
+  }
+}
