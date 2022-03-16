@@ -25,7 +25,7 @@ $__photos_border-color: #e1e0df;
   flex-flow: column wrap;
   align-items: center;
   justify-content: space-between;
-  border: $product_border-width solid $border-color;
+  border: $product_border-width solid $product_border-color;
   padding: $product_padding-y $product_padding-x;
   font-family: $product_font-family;
 
