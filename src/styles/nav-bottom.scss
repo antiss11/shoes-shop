@@ -1,5 +1,5 @@
 $__link_font-family: Arial, serif;
-$__link_font-size: 0.93rem;
+$__link_font-size: 0.9rem;
 $__link_color: white;
 $__link_padding-x: 0.6em;
 $__link_border-right-width: 1px;
@@ -14,7 +14,7 @@ $__link_border-right-width: 1px;
     padding: 0 $__link_padding-x;
 
     &:not(:last-child) {
-      border-right: $__link_border-right-width solid $__link_border-right-width;
+      border-right: $__link_color solid $__link_border-right-width;
     }
   }
 }
