@@ -1,0 +1,28 @@
+$top-items-container_bg-color: #9ccd8d;
+
+.top-items-container {
+  position: relative;
+  top: -170px;
+  background: {
+    color: $top-items-container_bg-color;
+  }
+
+  @include element("body") {
+    margin: 0 auto;
+    position: relative;
+  }
+
+  @include element("next") {
+    position: absolute;
+    top: 50%;
+    right: 11.6%;
+    z-index: 100;
+  }
+
+  @include element("prev") {
+    position: absolute;
+    top: 50%;
+    left: 11.6%;
+    z-index: 100;
+  }
+}
