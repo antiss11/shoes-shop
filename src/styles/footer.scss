@@ -1,0 +1,23 @@
+$footer_padding-y: 3em;
+$__brand-logo_font-size: 1.5rem;
+$__first-logo_color: white;
+$__second-logo_color: white;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $footer_padding-y 0;
+
+  @include element("brand-logo") {
+    font-size: $__brand-logo_font-size;
+  }
+
+  @include element("first-logo") {
+    color: $__first-logo_color;
+  }
+
+  @include element("second-logo") {
+    color: $__second-logo_color;
+  }
+}
