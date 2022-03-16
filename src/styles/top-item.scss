@@ -3,27 +3,26 @@ $top-item_max-width: 1060px;
 
 $__description_font-size: 4.3rem;
 $__description_color: white;
-$__description_top-offset: -0.25em;
+$__description_top-offset: 1.2em;
 $__description_margin-left: 0.5em;
 
 $__info_max-width: 45em;
 $__info_z-index: 1;
 
-$__link_top-offset: -2em;
+$__link_top-offset: 4em;
 $__link_left-offset: 3em;
 
 $__photo_left-offset: -3em;
-$__photo_top-offset: -3em;
+$__photo_top-offset: 3em;
 
 $__slogan_font-size: 9.7rem;
 $__slogan_color: black;
-$__slogan_top-offset: -0.1em;
+$__slogan_top-offset: 0.6em;
 $__slogan_line-height: 0.73;
 $__slogan_font-family: "Gotham Bold", Georgia, sans-serif;
 $__slogan_font-weight: bold;
 
 .top-item {
-  position: relative;
   max-width: $top-item_max-width;
   margin: 0 auto;
   display: flex;
