@@ -1,0 +1,90 @@
+$product-link_bg-color: #fe1f15;
+$product-link_border-radius: 16px;
+$product-link_padding-x: 1em;
+$product-link_padding-y: 0;
+$product-link_font-family: Gotham, Georgia, sans-serif;
+$product-link--small_font-size: 0.75rem;
+
+$__get_color: white;
+$__get_font-weight: 300;
+$__get_font-size: 1.1em;
+$__get_margin-right: 2em;
+$__get_padding-y: 0.5em;
+$__get_letter-spacing: 0.05em;
+$__get_left-offset: -1.2em;
+$__get-icon_right-offset: -0.7em;
+$__get-icon-width: 0.2em;
+$__get-icon-height: 0.2em;
+$__get-icon_line-width: 0.2em;
+$__get-icon_right-offset: -0.7em;
+
+$__price_font-weight: 500;
+$__price_color: white;
+$__price_margin-left: 1.6em;
+$__price_border-width: 1px;
+$__price_border-color: #ab090e;
+$__price_padding-top: 0.5em;
+$__price_padding-right: 0.5em;
+$__price_padding-bottom: 0.5em;
+$__price_padding-left: 0;
+$__price_left-offset: -1.8em;
+
+.product-link {
+  background-color: $product-link_bg-color;
+  border-radius: $product-link_border-radius;
+  display: inline-block;
+  padding: $product-link_padding-y $product-link_padding-x;
+  font-family: $product-link_font-family;
+
+  @include modifier("small") {
+    font-size: $product-link--small_font-size;
+  }
+
+  @include element("get") {
+    font: {
+      weight: $__get_font-weight;
+      size: $__get_font-size;
+    }
+    color: $__get_color;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: $__get_padding-y 0;
+    position: relative;
+    left: $__get_left-offset;
+    letter-spacing: $__get_letter-spacing;
+
+    &:after {
+      content: "";
+      display: block;
+      width: $__get-icon-width;
+      height: $__get-icon-height;
+      border: {
+        width: 0 $__get-icon_line-width $__get-icon_line-width 0;
+        color: $__get_color;
+        style: solid;
+      }
+      position: absolute;
+      top: calc(50% - #{$__get-icon-height});
+      right: $__get-icon_right-offset;
+      transform: rotate(-45deg);
+    }
+  }
+
+  @include element("price") {
+    font-weight: $__price_font-weight;
+    border-right: $__price_border-width solid $__price_border-color;
+    color: $__price_color;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: $__price_margin-left;
+    padding: {
+      top: $__price_padding-top;
+      right: $__price_padding-right;
+      bottom: $__price_padding-bottom;
+      left: $__price_padding-left;
+    }
+    position: relative;
+    left: $__price_left-offset;
+  }
+}
