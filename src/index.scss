@@ -1,5 +1,25 @@
+@import "styles/fonts.scss";
+@import "styles/mixins.scss";
+@import "styles/common.scss";
+@import "styles/wrapper.scss";
+@import "styles/catalog.scss";
+@import "styles/top-items-button.scss";
+@import "styles/header.scss";
+@import "styles/header-logo.scss";
+@import "styles/brand-logo.scss";
+@import "styles/shopping-cart-button.scss";
+@import "styles/top-nav.scss";
+@import "styles/top-items-container.scss";
+@import "styles/body.scss";
+@import "styles/top-item.scss";
+@import "styles/product-link.scss";
+@import "styles/main-container.scss";
 @import "styles/main.scss";
-
-body {
-  overflow: hidden;
-}
+@import "styles/category.scss";
+@import "styles/view-link.scss";
+@import "styles/special.scss";
+@import "styles/product.scss";
+@import "styles/footer-container.scss";
+@import "styles/footer.scss";
+@import "styles/nav-bottom.scss";
+@import "styles/social-links.scss";
