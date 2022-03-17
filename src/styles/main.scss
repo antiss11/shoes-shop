@@ -3,14 +3,7 @@
 
   @include element("categories") {
     $top-offset: -310px;
-
-    display: flex;
-    position: relative;
-    justify-content: space-between;
     margin-top: $top-offset;
-  }
-
-  @include element("category") {
   }
 
   @include element("special") {

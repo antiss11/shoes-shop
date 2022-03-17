@@ -1,6 +1,6 @@
-$header_bg-color: #f2f2f2;
 $header_z-index: 1;
 $header_font-family: "Gotham Rounded", Georgia, serif;
+$header_bg-color: #f2f2f2;
 
 $__brand-logo_font-size: 3.644rem;
 $__brand-logo_top-offset: -0.5em;
@@ -54,10 +54,10 @@ $__wrapper_padding-top: 4.2em;
 $__wrapper_padding-bottom: 2.5em;
 
 .header {
-  background-color: $header_bg-color;
   position: relative;
   z-index: $header_z-index;
   font-family: $header_font-family;
+  // background-color: $header_bg-color;
 
   @include element("brand-logo") {
     font-size: $__brand-logo_font-size;
@@ -185,10 +185,14 @@ $__wrapper_padding-bottom: 2.5em;
   @include element("wrapper") {
     padding: {
       top: $__wrapper_padding-top;
-      bottom: $__wrapper_padding-bottom;
+      // bottom: $__wrapper_padding-bottom;
     }
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  @include element("top-nav") {
   }
 }

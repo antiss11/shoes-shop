@@ -1,5 +1,7 @@
 $main-container_bg-color: #f2f2f2;
+$main-container_margin-top: 140px;
 
 .main-container {
   background-color: $main-container_bg-color;
+  margin-top: $main-container_margin-top;
 }

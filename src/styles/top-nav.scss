@@ -1,4 +1,3 @@
-$top-nav_top-offset: -2.5em;
 $top-nav_padding-x: 2.25em;
 $top-nav_padding-y: 0.8em;
 $top-nav_bg-color: #fcfcfc;
@@ -30,10 +29,8 @@ $__search-icon_text-indent: 0.8125em;
 
 .top-nav {
   position: relative;
-  top: $top-nav_top-offset;
   padding: $top-nav_padding-y $top-nav_padding-x;
   background-color: $top-nav_bg-color;
-  box-sizing: border-box;
   border: $top-nav_border-width solid $top-nav_border-color;
   letter-spacing: $top-nav_letter-spacing;
   display: flex;
@@ -44,7 +41,9 @@ $__search-icon_text-indent: 0.8125em;
   @include element("link") {
     display: inline-block;
     color: $__link_color;
-    border-right: $__link_border-width solid $__link_delimiter-color;
+    &:not(:last-child):not(:first-child) {
+      border-left: $__link_border-width solid $__link_delimiter-color;
+    }
     font: {
       weight: $__link_font-weight;
       size: $__link_font-size;

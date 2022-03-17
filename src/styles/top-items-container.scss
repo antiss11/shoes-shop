@@ -1,15 +1,16 @@
 $top-items-container_bg-color: #9ccd8d;
+$top-items-container_margin-top: -20px;
 
 .top-items-container {
   position: relative;
-  top: -170px;
-  background: {
-    color: $top-items-container_bg-color;
-  }
+  margin-top: $top-items-container_margin-top;
+  overflow: hidden;
 
   @include element("body") {
     margin: 0 auto;
     position: relative;
+    top: -100px;
+    background-color: $top-items-container_bg-color;
   }
 
   @include element("next") {
