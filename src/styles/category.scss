@@ -1,19 +1,22 @@
 $category_bg-color: white;
 $category_border-color: #dcdcdc;
-$category_padding-x: 4.65em;
-$category_padding-y: 1.5em;
+$category_padding-x: 4.5em;
+$category_padding-y: 1.3em;
 $category_border-width: 1px;
 $category_font-family: "Gotham", Georgia, serif;
+$category--embed_font-size: 0.6rem;
+$category--embed_padding-x: 2em;
+$category--embed_padding-y: 1em;
 
 $__name_font-weight: 300;
-$__name_font-size: 2.5rem;
+$__name_font-size: 2.5em;
 $__name_color: black;
 
 $__total-count_font-weight: 300;
 $__total-count_color: black;
 
 $__total-text_font-weight: 500;
-$__total-text_font-size: 1.5rem;
+$__total-text_font-size: 1.5em;
 $__total-text_color: #f2262c;
 
 $__view-link_top-offset: 0.1em;
@@ -27,6 +30,12 @@ $__view-link_top-offset: 0.1em;
   padding: $category_padding-y $category_padding-x;
   font-family: $category_font-family;
 
+  @include modifier("embed") {
+    font-size: $category--embed_font-size;
+    padding: $category--embed_padding-y $category--embed_padding-x;
+    border: none;
+  }
+
   @include element("name") {
     margin: 0;
     font: {
@@ -39,6 +48,7 @@ $__view-link_top-offset: 0.1em;
 
   @include element("preview") {
     position: relative;
+
     @include modifier("woman") {
       &::before {
         content: "";
@@ -102,5 +112,9 @@ $__view-link_top-offset: 0.1em;
   @include element("view-link") {
     position: relative;
     top: $__view-link_top-offset;
+  }
+
+  @include element("main-image") {
+    width: 12em;
   }
 }
