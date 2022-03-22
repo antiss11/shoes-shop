@@ -1,0 +1,65 @@
+$colors: (
+  "alizarin-crimson": #e82026,
+  "tan-hide": #f9a058,
+  "cornflower-blue": #58a8f9,
+  "yellow-green": #dbe47b,
+  "dark-tan": #610b0e,
+  "disco": #781c70,
+  "nile-blue": #1b334c,
+  "chalet-green": #517737,
+  "electric-violet": #7520e8,
+  "mondo": #4c3d31,
+  "cod-gray": #060606,
+  "san-felix": #1a6a0b,
+  "strikemaster": #a0629f,
+  "venice-blue": #074a74,
+  "pink-swan": #beadad,
+  "pomegranate": #f65812,
+  "fuego": #c4da0f,
+  "oracle": #377377,
+  "old-rose": #bd8b7a,
+);
+
+$__header_font-family: Gotham, Georgia, sans-serif;
+$__header_font-weight: 500;
+
+$__color_width: 20px;
+$__color_height: 20px;
+
+.color-picker {
+  @include element("header") {
+    text-transform: uppercase;
+    font: {
+      family: $__header_font-family;
+      weight: $__header_font-weight;
+    }
+  }
+
+  @include element("colors") {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  @include element("color") {
+    width: $__color_width;
+    height: $__color_height;
+    box-sizing: border-box;
+    border: none;
+    margin: {
+      top: 0;
+      right: 1px;
+      bottom: 1px;
+      left: 0;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @each $modifier, $color in $colors {
+      &--#{$modifier} {
+        background-color: $color;
+      }
+    }
+  }
+}
