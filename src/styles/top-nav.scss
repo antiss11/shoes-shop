@@ -37,6 +37,8 @@ $__search-icon_text-indent: 0.8125em;
   align-items: center;
   z-index: $top-nav_z-index;
   font-family: $top-nav_font-family;
+  margin: 0;
+  width: 100%;
 
   @include element("link") {
     display: inline-block;
