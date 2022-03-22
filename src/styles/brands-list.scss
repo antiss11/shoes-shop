@@ -1,0 +1,71 @@
+$brands-list_font-size: 1em;
+$brands-list_padding-top: 0;
+$brands-list_padding-right: 50px;
+$brands-list_padding-bottom: 0;
+
+$brands-list-delimiter_width: 1px;
+$brands-list-delimiter_height: 80%;
+$brands-list-delimiter_color: #edeced;
+$brands-list-delimiter_left: 120px;
+$brands-list-delimiter_top: -80%;
+
+$__brand_font-family: Arial, serif;
+$__brand_color: #5c4344;
+$__brand_font-size: 0.75em;
+$__brand_margin-top: 2px;
+
+$__header_font-weight: 500;
+$__header_text-indent: 25%;
+
+$__list_margin-top: 8px;
+$__list_max-height: 180px;
+$__list_font-size: 1rem;
+$__list_column-gap: 40px;
+
+.brands-list {
+  font-size: $brands-list_font-size;
+  padding: {
+    top: $brands-list_padding-top;
+    right: $brands-list_padding-right;
+    bottom: $brands-list_padding-bottom;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: $brands-list-delimiter_width;
+    box-sizing: border-box;
+    height: $brands-list-delimiter_height;
+    border: 1px solid $brands-list-delimiter_color;
+    position: relative;
+    left: $brands-list-delimiter_left;
+    top: $brands-list-delimiter_top;
+  }
+
+  @include element("brand") {
+    font-family: $__brand_font-family;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: $__brand_color;
+    font-size: $__brand_font-size;
+    margin: $__brand_margin-top 0;
+  }
+
+  @include element("header") {
+    text-transform: uppercase;
+    font-weight: $__header_font-weight;
+    text-indent: $__header_text-indent;
+    margin: 0;
+  }
+
+  @include element("list") {
+    margin-top: $__list_margin-top;
+    max-height: $__list_max-height;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+    font-size: $__list_font-size;
+    position: relative;
+    column-gap: $__list_column-gap;
+  }
+}
