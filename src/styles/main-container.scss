@@ -3,5 +3,18 @@ $main-container_margin-top: 140px;
 
 .main-container {
   background-color: $main-container_bg-color;
-  margin-top: $main-container_margin-top;
+
+  @include element("special") {
+    margin-top: 15px;
+  }
+
+  @include element("main") {
+    @include modifier("gap-large") {
+      margin-top: 75px;
+    }
+
+    @include modifier("gap-regular") {
+      margin-top: 15px;
+    }
+  }
 }
