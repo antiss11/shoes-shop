@@ -1,0 +1,10 @@
+.filter-params {
+  display: flex;
+  // align-items: center;
+  flex-flow: column wrap;
+  padding: 10px 10px;
+
+  @include element("price") {
+    margin-top: 8px;
+  }
+}

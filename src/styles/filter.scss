@@ -1,0 +1,45 @@
+$filter__bg-color: white;
+$filter_font-family: Gotham, Georgia, sans-serif;
+$filter_padding-x: 1em;
+$filter_padding-y: 0.1em;
+$__header_font-size: 1.8em;
+$__header_font-weight: 500;
+$__header_bg-color: #2a2929;
+$__header_color: white;
+$__header_padding-x: 0.8em;
+$__header_padding-y: 0.2em;
+$__header_left: 25px;
+$__header-top: -32px;
+
+$__brand_color: #5c4344;
+
+.filter {
+  background-color: $filter__bg-color;
+  font-family: $filter_font-family;
+  margin-top: 50px;
+
+  @include element("header") {
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: $__header_bg-color;
+    padding: $__header_padding-y $__header_padding-x;
+    color: $__header_color;
+    margin: 0;
+    position: relative;
+    left: $__header_left;
+    top: $__header-top;
+    font-weight: $__header_font-weight;
+  }
+
+  @include element("brands") {
+  }
+
+  @include element("categories") {
+  }
+
+  @include element("body") {
+    padding: $filter_padding-y $filter_padding-x;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
