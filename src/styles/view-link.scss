@@ -2,7 +2,7 @@ $__line_width: 0.9em;
 $__line_height: 1px;
 $__line_border-width: 1px;
 $__line_border-color: black;
-$__line_margin-bottom: 1px;
+$__line_margin-bottom: 0.03em;
 
 .view-link {
   @include element("line") {

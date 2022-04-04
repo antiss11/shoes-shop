@@ -21,6 +21,10 @@ $__header-text_font-size: 1.5rem;
   padding: $special_padding-y $special_padding-x;
   background-color: white;
 
+  &:nth-child(n+2) {
+    margin-top: 33px;
+  }
+
   @include element("all-products-link") {
     font: {
       family: $__all-products-link_font-family;

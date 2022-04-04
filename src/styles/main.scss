@@ -1,8 +1,6 @@
 .main {
-  margin-top: 75px;
-
   @include element("categories") {
-    $top-offset: -310px;
+    $top-offset: -250px;
     margin-top: $top-offset;
   }
 

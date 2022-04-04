@@ -1,6 +1,5 @@
 $category_bg-color: white;
-$category_border-color: #dcdcdc;
-$category_padding-x: 4.5em;
+$category_padding-x: 4em;
 $category_padding-y: 1.3em;
 $category_border-width: 1px;
 $category_font-family: "Gotham", Georgia, serif;
@@ -23,7 +22,6 @@ $__view-link_top-offset: 0.1em;
 
 .category {
   background-color: $category_bg-color;
-  border: $category_border-width solid $category_border-color;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -33,7 +31,6 @@ $__view-link_top-offset: 0.1em;
   @include modifier("embed") {
     font-size: $category--embed_font-size;
     padding: $category--embed_padding-y $category--embed_padding-x;
-    border: none;
   }
 
   @include element("name") {
