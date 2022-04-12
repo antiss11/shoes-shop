@@ -1,10 +1,18 @@
+$__categories_margin-top: -250px;
+$__special_margin-top: 20px;
+$__product-main-overview_margin-top: 2em;
+
 .main {
+
   @include element("categories") {
-    $top-offset: -250px;
-    margin-top: $top-offset;
+    margin-top: $__categories_margin-top;
   }
 
   @include element("special") {
-    margin-top: 20px;
+    margin-top: $__special_margin-top;
+  }
+
+  @include element("product-main-overview") {
+    margin-top: $__product-main-overview_margin-top;
   }
 }
