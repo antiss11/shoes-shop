@@ -69,3 +69,23 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/src/media/fonts/GothamBook-Italic.woff2') format('woff2'),
+      url('/src/media/fonts/GothamBook-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/src/media/fonts/Gotham-BoldItalic.woff2') format('woff2'),
+      url('/src/media/fonts/Gotham-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+
