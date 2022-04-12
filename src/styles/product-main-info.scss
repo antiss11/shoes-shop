@@ -1,0 +1,7 @@
+.product-main-info {
+  display: flex;
+  
+  @include element("description") {
+    margin-left: 50px;
+  }
+}
