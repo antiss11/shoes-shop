@@ -1,0 +1,43 @@
+.product-main-description {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  @include element("prices-container") {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    position: relative;
+    align-self: center;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: #cfc8bc;
+      bottom: 40px;
+    }
+  }
+
+  @include element("description") {
+    font-family: Arial, sans-serif;
+    color: #929191;
+    font-size: 0.8rem;
+    text-align: end;
+    position: relative;
+    top: -2.5em;
+  }
+
+  @include element("shipping-info") {
+    position: relative;
+    top: -20px;
+  }
+
+  @include element("order-params") {
+    position: relative;
+    top: -10px;
+  }
+}
