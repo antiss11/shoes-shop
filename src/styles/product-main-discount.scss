@@ -1,0 +1,15 @@
+.product-main-discount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 1em;
+  top: -2em;
+  font-family: Gotham, Georgia, sans-serif;
+  font-weight: 300;
+
+  &--bold {
+    font-weight: 500;
+  }
+}
