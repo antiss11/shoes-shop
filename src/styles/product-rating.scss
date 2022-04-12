@@ -1,0 +1,32 @@
+.product-rating {
+  width: 100%;
+  @include element("stars-container") {
+    display: flex;
+    position: relative;
+  }
+
+  @include element("reviews-link") {
+    color: black;
+    font-style: italic;
+    font-family: Gotham, Georgia, sans-serif;
+    font-size: 0.9rem;
+
+    @include modifier("bold") {
+      font-weight: bold;
+    }
+  }
+
+  @include element("star") {
+    width: 1.3em;
+    height: 1.3em;
+    &::before {
+      position: absolute;
+      width: 1.3em;
+      height: 1.3em;
+      content: url(/src/media/icons/star.svg);
+    }
+    &--filled:before {
+      content: url(/src/media/icons/star-filled.svg);
+    }
+  }
+}
