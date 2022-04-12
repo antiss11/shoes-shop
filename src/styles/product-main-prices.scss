@@ -1,0 +1,34 @@
+.product-main-prices {
+
+  position: relative;
+  top: -0.5em;
+
+  @include element("old-price") {
+    font-family: Gotham, Georgia, sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-decoration: line-through;
+    background-color: #e71f25;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: -1.2em;
+    padding: 0 0.7em;
+  }
+
+  @include element("new-price") {
+    font-family: "Gotham Rounded", Georgia, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    padding: 0 0.3em;
+    color: #444444;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 -2px #c7c7c7;
+    @include modifier("normal") {
+      font-weight: normal;
+    }
+  }
+  font-size: 3rem;
+  background: white;
+}
