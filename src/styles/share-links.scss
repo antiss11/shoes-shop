@@ -1,0 +1,74 @@
+.share-links {
+  
+  font-family: Gotham, Georgia, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include element("header") {
+    font-size: 0.8rem;
+    text-align: end;
+    flex: 1 1 100%;
+  }
+
+  @include element("container") {
+    margin-left: auto;
+    margin-right: 0.8em;
+    display: flex;
+    align-items: center;
+  }
+
+  @include element("link") {
+    width: 16px;
+    height: 16px;
+
+    &:nth-child(n+1) {
+      margin-right: .2em;
+    }
+
+    @include modifier("facebook") {
+      content: url(/src/media/icons/share/facebook.png);
+    }
+
+    @include modifier("twitter") {
+      content: url(/src/media/icons/share/twitter.png);
+    }
+
+    @include modifier("mail") {
+      content: url(/src/media/icons/share/mail.png);
+    }
+
+    @include modifier("print") {
+      content: url(/src/media/icons/share/print.png);
+    }
+
+    @include modifier("other") {
+      content: url(/src/media/icons/share/plus.png);
+    }
+  }
+
+  @include element("share-count") {
+    display: inline-block;
+    padding: .2em .5em;
+    border: 1px solid #c2c2c2;
+    position: relative;
+    font-size: 0.6rem;
+    margin-left: 1.5em;
+
+    &:before {
+      content: "";
+      width: 0.6em;
+      height: 0.6em;
+      top: calc(50% - 0.3em);
+      transform: rotate(-45deg);
+      position: absolute;
+      left: -6px;
+      border: {
+        left: 1px solid #c2c2c2;
+        top: 1px solid #c2c2c2;
+      }
+      background: white;
+    }
+  }
+}
