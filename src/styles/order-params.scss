@@ -1,0 +1,98 @@
+$__param-name_color: #605f5f;
+$__param-name_font-size: 0.8rem;
+$__param-name_font-family: Arial, sans-serif;
+
+$__input_color: #585757;
+$__input_padding: 0.65em 1em;
+$__input_border-color: #e2e2e2;
+$__input--size_width: 10em;
+$__input--qty_width: 1em;
+
+$__param_odd: 1em;
+
+$__submit_padding: 1em 2em;
+$__submit_outline-color: #c4604a;
+$__submit_font-size: 1rem;
+$__submit_color: white;
+
+.order-params {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+
+  @include element("params-container") {
+  }
+
+  @include element("form") {
+    display: flex;
+  }
+
+  @include element("param-name") {
+    color: $__param-name_color;
+    font-family: $__param-name_font-family;
+    font-style: italic;
+    font-weight: bold;
+    font-size: $__param-name_font-size;
+    margin: 0;
+  }
+  
+  @include element("form") {
+    display: flex;
+  };
+
+  @include element("input") {
+    color: $__input_color;
+    font-style: italic;    
+    box-sizing: border-box;
+    padding: $__input_padding;
+    border: 1px solid $__input_border-color;
+    border-radius: .4em;
+    margin: 0;
+
+    @include modifier("size") {
+      width: 10em;
+    }
+
+    @include modifier("qty") {
+      width: 4em;
+    }
+  }
+
+  @include element("param") {
+
+    &:nth-child(odd) {
+      margin-right: $__param_odd;
+    }
+
+  }
+
+
+  @include element("submit") {
+    padding: 1em 2em;
+    background: linear-gradient(25deg, #ef3124 40%, #f24441 40%, #f03930);
+    border-radius: .2em;
+    box-shadow: inset 0 2px #ffa79e;
+    border: none;
+    outline: 1px solid $__submit_outline-color;
+    color: $__submit_color;
+    font-family: Gotham, Georgia, sans-serif;
+    font-size: $__submit_font-size;
+    width: 100%;
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &::after {
+      content: "";
+      width: 1.7em;
+      height: 1.7em;
+      position: absolute;
+      top: calc(50% - 0.75em);
+      background: url(/src/media/icons/cart.png) no-repeat;
+      background-size: cover;
+      
+    }
+  }
+}
